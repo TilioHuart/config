@@ -8,7 +8,7 @@
     "margin-right": 0,
     "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/playerctl", "custom/playerlabel"],
     "modules-center": ["cpu", "clock", "memory", "disk"],
-    "modules-right": ["tray", "custom/randwall","network", "pulseaudio", "battery", "custom/power"],
+    "modules-right": ["tray", "bluetooth", "network", "pulseaudio", "battery", "custom/power"],
     // Modules configuration
 	"clock": {
 		"format": "  {:%H:%M}",
@@ -73,6 +73,13 @@
       "tooltip-format": "wlogout"
     },
 
+    "bluetooth": {
+      "format": "",
+      "format-connected": " {device_alias}",
+      "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+      "on-click": "rofi-bluetooth",
+    },
+
 	"battery": {
         "states": {
             "good": 95,
@@ -82,7 +89,7 @@
         "format":"{icon}   {capacity}%",
         "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% ",
-        "format-alt": "{icon} {time}",
+        "format-alt": "{icon}   {time}",
         // "format-good": "", // An empty format will hide the module
         "format-full": "",
         "format-icons": ["", "", "", "", ""]

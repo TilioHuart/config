@@ -41,6 +41,13 @@ window#waybar {
 	border-radius: 16px;
 }
 
+#bluetooth {
+  border-radius: 0;
+}
+#bluetooth.connected {
+  color: #f4d9e1;
+}
+
 #custom-date, #clock, #battery, #pulseaudio, #network, #custom-randwall, #custom-launcher {
 	background: transparent;
 	padding: 5px 5px 5px 5px;
