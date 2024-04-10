@@ -149,7 +149,7 @@
     "scroll-step": 5,
 		"on-click-right": "pavucontrol"
   },
-  "custom/randwall": {
+  "custom/randwall": {01
     "format": "󰏘",
     "on-click": "bash $HOME/.config/hypr/randwall.sh",
     "on-click-right": "bash $HOME/.config/hypr/wall.sh"
