@@ -11,7 +11,7 @@ return {
       local configs = require('lspconfig.configs')
 
 
-      lsp.lua_ls.setup({})
+      lsp.html.setup({})
       lsp.clangd.setup({
         cmd = {
           'clangd',
@@ -22,6 +22,7 @@ return {
         },
       })
       lsp.pyright.setup({})
+      lsp.hls.setup({})
 
       lsp_zero.on_attach(function(_, bufnr)
         local opts = {buffer = bufnr, remap = false}
