@@ -35,4 +35,4 @@ vim.keymap.set("n", "<C-t>g", ":Telescope live_grep<CR>",
 vim.keymap.set("n", "<C-t>f", ":Telescope find_files<CR>",
     { noremap = true, silent = true, desc = 'open file search with Telescope' })
 
-vim.cmd.colorscheme "cyberdream"
+vim.cmd.colorscheme "catppuccin-mocha"
